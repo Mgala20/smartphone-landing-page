@@ -24,7 +24,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="relative z-20 text-center px-4 container"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Premium Smartphones & Accessories</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-">Premium Smartphones & Accessories</h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
           Discover the latest smartphones, cases, chargers, and more at unbeatable prices.
         </p>

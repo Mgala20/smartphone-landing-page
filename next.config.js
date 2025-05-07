@@ -1,8 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Required for static exports
   images: {
-    domains: ['images.unsplash.com'], // Add any other domains you use for images
+    unoptimized: true, // Disables Image Optimization API (required for static exports)
   },
-};
+  // Optional: Add if you need trailing slashes
+  trailingSlash: true,
+  
+  // Enable React Strict Mode (recommended)
+  reactStrictMode: true,
 
-module.exports = nextConfig;
+  // If using App Router, add this:
+  experimental: {
+    appDir: true,
+  }
+}
+
+module.exports = nextConfig

@@ -30,7 +30,7 @@ const products = [
     category: "Accessory",
     price: 39.99,
     rating: 4.5,
-    image: "/images/accessory1.jpg",
+    image: "Charger.jpg",
     description: "Fast charging for all devices"
   },
   {
@@ -39,7 +39,7 @@ const products = [
     category: "Accessory",
     price: 149.99,
     rating: 4.7,
-    image: "/images/accessory2.jpg",
+    image: "Wireless earbuds.jpg",
     description: "Active noise cancellation"
   },
   // Add more products as needed

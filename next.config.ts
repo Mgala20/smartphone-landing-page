@@ -1,19 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Required for static exports
-  images: {
-    unoptimized: true, // Disables Image Optimization API (required for static exports)
-  },
-  // Optional: Add if you need trailing slashes
-  trailingSlash: true,
-  
-  // Enable React Strict Mode (recommended)
   reactStrictMode: true,
-
-  // If using App Router, add this:
-  experimental: {
-    appDir: true,
-  }
+  swcMinify: true,
+  images: {
+    domains: [], // Add any image domains you need here
+  },
+  // No need for experimental.appDir since it's now stable
+  // Other configuration options can go here
 }
 
 module.exports = nextConfig
